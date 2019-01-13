@@ -25,17 +25,16 @@
         font-size: 3.5em
 .ltx-accolades__crests
     margin-bottom: 20px
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
+    display: grid
+    width: 100%
+    grid-template-columns: 1fr 1fr
     @media screen and (min-width: 700px)
-        flex-direction: column
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
         margin-right: 40px
-        margin-bottom: 0px
+        max-width: 170px
 
 .ltx-accolades__crest
-    max-width: 150px
     width: 100%
     padding: 20px
     mix-blend-mode: lighten
