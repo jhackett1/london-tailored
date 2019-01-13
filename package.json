@@ -1,0 +1,23 @@
+{
+  "name": "london-tailored-tours",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "author": "",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "license": "ISC"
+}
