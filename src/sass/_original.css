@@ -1320,3 +1320,380 @@ footer {
           div.site-body main.site-content ul.post-grid li {
             width: 33.33%; } }
       
+
+            .home-sells{
+              background: rgba(0, 0, 0, 0.3)
+            }
+            
+            p{
+              line-height: 1.7em
+            }
+            
+            /* Tour list styles */
+            .tours-intro ul{
+              margin: 0px 0px 15px 20px;
+            }
+            .tours-intro ul li{
+              color: #efefef;
+              padding-left: 10px;
+            }
+            
+            /* Homepage copy */
+            section.home-insta p{
+              margin: 5px auto 25px auto;
+            }
+            
+            /* Make both CTA buttons yellow */
+            section.home-bold a.button.xl{
+              background-color: #FED838;
+              color: #2F2B2C;
+            }
+            
+            /* Fix button color on tour page */
+            main.site-content.tour a.wp-block-button__link{
+              color: #2F2B2C;
+            }
+            
+            /* Spacing of homepage Insta feed */
+            div#sb_instagram{
+              margin-bottom: 40px;
+            }
+            /* Ditto for tour page */
+            section.reviews div#sb_instagram{
+              margin-top: 40px;
+              margin-bottom: 0px;
+            }
+            
+            /* Increase menu item spacing */
+            header.site-header nav.main-menu ul li {
+            /*     margin: 15px 10px; */
+            }
+            
+            /* Contact form */
+            .field-wrap .pikaday__container, .field-wrap .pikaday__display, .field-wrap>div input, .field-wrap select, .field-wrap textarea{
+                  background-color: rgba(0, 0, 0, 0.3);
+                color: #ffffff;
+                padding: 10px;
+                border-radius: 3px;
+                border: 0px;
+                font-size: 1em;
+            }
+            
+            main.site-content article.post.post-single div.post-content div.nf-form-cont input[type=button], main.site-content article.post.page div.post-content div.nf-form-cont input[type=button]:hover{
+              background-color: #ffd918;
+              color: #2f2b2c;
+            }
+            
+            /* Tour page button */
+            section.tours-coda div.container a, section.tours-intro div.container a:hover{
+              background-color: #ffd918;
+              color: #2f2b2c;
+            }
+            
+            /* Pricee */
+            main.site-content article.post span, main.site-content li.post-grid-item span.price{
+              margin-bottom: 10px;
+            }
+            
+            section.home-tours ul.tour-grid li a span.price{
+                position: absolute;
+                right: 0px;
+                bottom: 15px;
+                left: 0px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                color: #f6f6f6;
+                font-weight: 700;
+                font-size: 0.8em;
+                letter-spacing: 3px;
+            }
+            
+            /* Make team member pictures bigger */
+            
+            @media screen and (min-width: 900px){
+                div#smallwins-team-gallery ul li aside.image {
+                  height: 280px !important;
+                  width: 280px !important;
+              }
+            }
+            
+            /* Gallery captions */
+            .wp-block-gallery .blocks-gallery-item figure {
+              position: relative;
+            }
+            .wp-block-gallery .blocks-gallery-item figure img {
+              margin-bottom: 0px !important;
+            }
+            
+            .wp-block-gallery .blocks-gallery-item figcaption {
+                padding: 10px;
+                font-size: 0.9em;
+                position: absolute;
+              right:0;
+              left: 0;
+              bottom: 0;
+                width: 100%;
+            }
+            
+            .heading-margin-top{
+              margin-top: 80px;
+            }
+            
+            aside.site-sidebar img {
+                width: 100%;
+            }
+            
+            div.site-body main.site-content article.tour div.post-content h4 {
+                font-size: 1.4em;
+            }
+            
+            div.site-body main.site-content article.post.post-single div.post-content h1, div.site-body main.site-content article.post.post-single div.post-content h2, div.site-body main.site-content article.post.post-single div.post-content h3, div.site-body main.site-content article.post.post-single div.post-content h4, div.site-body main.site-content article.post.post-single div.post-content h5, div.site-body main.site-content article.post.page div.post-content h1, div.site-body main.site-content article.post.page div.post-content h2, div.site-body main.site-content article.post.page div.post-content h3, div.site-body main.site-content article.post.page div.post-content h4, div.site-body main.site-content article.post.page div.post-content h5, div.site-body main.site-content article.tour div.post-content h1, div.site-body main.site-content article.tour div.post-content h2, div.site-body main.site-content article.tour div.post-content h3, div.site-body main.site-content article.tour div.post-content h4, div.site-body main.site-content article.tour div.post-content h5{
+              margin-top: 60px;
+            }
+            
+            main.site-content article.post.post-single span.post-tags, main.site-content article.post.page span.post-tags {
+                margin-top: 60px;
+            }
+            
+            main.site-content article.post.post-single div.post-content blockquote.is-large, main.site-content article.post.page div.post-content blockquote.is-large{
+              padding-left: 20px;
+                border-left: 4px solid #ffd918;
+            }
+            
+            main.site-content article.post.post-single div.post-content blockquote.is-large p, main.site-content article.post.page div.post-content blockquote.is-large p{
+              font-size: 0.6em;
+              font-style: normal !important;
+              font-family: "Open Sans", sans-serif;	
+            }
+            
+            /* What people say reviews */
+            aside.site-sidebar section.reviews ul.reviews-list{
+              list-style-type: none;
+              margin-bottom: 20px;
+            }
+            aside.site-sidebar section.reviews ul.reviews-list li{
+              padding: 10px;
+              clear: both;
+            }
+            aside.site-sidebar section.reviews ul.reviews-list li p{
+              margin-bottom: 5px;
+              font-size: 1.1em
+            }
+            aside.site-sidebar section.reviews ul.reviews-list small{
+              margin: 0;
+              padding: 0;
+              font-size: 0.9em;
+            }
+            aside.site-sidebar section.reviews ul.reviews-list small span{
+              color: #FED838;
+            }
+            aside.site-sidebar section.reviews img.logo{
+              width: calc(50% - 50px);
+              margin: auto;
+              float: left;
+              margin: 25px;
+            }
+            
+            article.tour ul{
+              margin-left: 20px;
+            }
+            article.tour ul li{
+              padding-left: 10px;
+              margin-bottom: 5px;
+            }
+            
+            .wp-block-separator {
+                border-bottom: 2px solid #FED838;
+              margin: 30px auto;
+            }
+            
+            article.tour .wp-block-image, article.tour .wp-block-image img{
+              width: 100%;
+              height: auto;
+            }
+            
+            article.tour ul.wp-block-gallery{
+              margin: 20px 0px;
+              padding: 0px;
+              transform: scale(1.04);
+            }
+            
+            article.tour ul.wp-block-gallery li{
+              padding-left: 0px;
+            }
+            
+            .wp-block-verse{
+              width: 100%;
+              color: #ffd918;
+              margin: 20px 0px;
+              font-size: 0.9em;
+              font-family: Open Sans;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              white-space: normal;
+            }
+            
+            section.tours-coda{
+              background-color: #ffd918;
+              color: #2d2d2d;
+            }
+            section.tours-coda div.container p{
+              color: #2d2d2d
+            }
+            section.tours-coda a.button.filled{
+              background-color: #2d2d2d;
+              border-color: #2d2d2d;
+              color: #ffd918;
+            }
+            
+            section#tm_profile_box{
+              border-top: 0.5px solid #dfdfdf;
+              margin: 0px 20px;
+              padding: 20px 0px;
+            }
+            
+            section#tm_profile_box aside.image{
+              height: 100px;
+              width: 100px;
+              margin-bottom: 15px;
+              margin-right: 15px;
+              background-size: cover;
+            }
+            
+            section#tm_profile_box h4{
+              font-size: 1.5em;
+              margin-bottom: 5px;
+            }
+            
+            section#tm_profile_box p{
+              font-size: 0.9em;
+              line-height: 1.4em;
+              margin-bottom: 7px;
+              opacity: 0.8}
+            
+            @media (min-width: 641px){
+              section#tm_profile_box{
+                display: flex;
+                flex-direction: row;
+              }
+              aside.text{
+                flex: 1;
+              }
+            }
+            
+            @media (min-width: 800px){
+              section#tm_profile_box h4{
+                font-size: 1.7em;
+                margin-bottom: 10px;
+              }
+              
+              section#tm_profile_box aside.image{
+                height: 150px;
+                width: 150px;
+                margin-right: 25px;
+                margin-bottom: 25px;
+              }
+            }
+            
+            .home-bold a.button.xl{
+              width: 300px;
+              max-width: 300px;
+            }
+            
+            
+            section.home-tours ul.tour-grid li a span.price{
+              text-transform: uppercase;
+              left: 5px;
+              right: 5px;
+              font-size: 0.7em;
+            }
+            
+            @media (min-width: 641px){
+              section.home-tours ul.tour-grid li a span.price{
+                font-size: 0.8em;
+              }
+            }
+            
+            .button.button--global{
+              padding: 5px 11px;
+              background: #ffd918 !important;
+              font-size: 0.75em;
+              color: #2f2b2c !important;
+              margin-left: 5px;
+              transform: translateY(-5px);
+              width: inherit
+            }
+            
+            .ltt-hero aside {
+              padding: 15px;
+            }
+            
+            .ltt-hero__text{
+              text-align: center
+            }
+            
+            .ltt-hero h2{
+              margin-bottom: 10px;
+            }
+            
+            .ltt-hero p{
+            /* 	opacity: 0.75; */
+              margin-bottom: 15px;
+            }
+            
+            @media (min-width: 700px){
+              .ltt-hero .container{
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+              }
+              .ltt-hero__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                margin-right: 60px
+              }
+              .ltt-hero h2{
+              margin-bottom: 20px;
+                font-size: 2em;
+              }
+              .ltt-hero p{
+                margin-bottom: 25px;
+              }
+            }
+            
+            
+            @media (min-width: 900px){
+              .ltt-hero h2{
+                font-size: 2.5em;
+              }
+              .ltt-hero p{
+                font-size: 1.25em
+              }
+            }
+            
+            .post-content iframe{
+              margin-top: 20px;
+              border: none;
+              width: 100%;
+              max-width: 100%;
+            /* 	height: auto; */
+            }
+            
+            .post-content iframe{
+              margin-top: 20px;
+              border: none;
+              width: 100%;
+              max-width: 100%;
+            /* 	height: auto; */
+            }
+            
+            
+            

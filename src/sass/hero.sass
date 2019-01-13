@@ -1,0 +1,58 @@
+.ltx-hero
+    margin-top: 0px !important
+    margin-bottom: 20px !important
+    height: 100vh
+    overflow: hidden
+    position: relative
+
+.ltx-hero__video
+    opacity: 0.3
+    z-index: -1
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+.ltx-hero__video-inner
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    @media (min-aspect-ratio: 16/9)
+        height: 300%
+        top: -100%
+    @media (max-aspect-ratio: 16/9)
+        width: 300%
+        left: -100%
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+.ltx-hero__text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    align-items: center
+    padding: 0px 20px
+    padding-top: 130px
+
+.ltx-hero__headline
+    margin-bottom: 5px
+    @media screen and (min-width: 700px)
+        font-size: 2em
+    @media screen and (min-width: 1500px)
+        font-size: 2.5em
+
+.ltx-hero__subheadline
+    margin-bottom: 20px
+    @media screen and (min-width: 700px)
+        font-size: 1.25em
+    @media screen and (min-width: 1500px)
+        font-size: 1.5em
+        margin-bottom: 30px

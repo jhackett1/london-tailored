@@ -1,0 +1,45 @@
+.ltx-offering
+    margin-top: 0px !important
+    margin-bottom: 20px !important
+    
+.ltx-offering__inner
+    @media screen and (min-width: 700px)
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 40px
+    @media screen and (min-width: 1600px)
+        grid-column-gap: 60px
+
+.ltx-offering__card
+    background: $white
+    margin-bottom: 20px
+    color: $grey1
+    text-align: left
+    border-radius: 3px
+    overflow: hidden
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.2)
+    &:last-of-type
+        margin-bottom: 0px
+    @media screen and (min-width: 700px)
+        &:last-of-type
+            transform: translateY(100px)
+
+
+.ltx-offering__card-inner
+    padding: 35px
+    @media screen and (min-width: 1600px)
+        padding: 50px
+
+.ltx-offering__image
+    width: 100%
+
+.ltx-offering__headline
+    margin-bottom: 10px
+
+.ltx-offering__description
+    margin-bottom: 30px
+    color: $grey2
+
+.ltx-offering__button
+    margin-bottom: 20px
+    

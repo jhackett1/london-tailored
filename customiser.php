@@ -23,9 +23,9 @@ function smallwins_customiser($wp_customize){
     'transport' => 'refresh',
   ));
 	
-	$wp_customize->add_setting('ltt-cta', array(
-    'transport' => 'refresh',
-  ));
+	// $wp_customize->add_setting('ltt-cta', array(
+  //   'transport' => 'refresh',
+  // ));
 	
   // Controls
   $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'smallwins_default_social_share_image', array(
@@ -124,15 +124,15 @@ function smallwins_customiser($wp_customize){
     'transport' => 'refresh',
   ));
   // Controls
-  $wp_customize->add_control(
-    'ltt-cta',
-    array(
-        'label' => 'Header button link',
-        'section' => 'smallwins_cta',
-        'type' => 'textarea',
-        'description' => "Where should the 'book now' button in the header link to?"
-    )
-  );
+  // $wp_customize->add_control(
+  //   'ltt-cta',
+  //   array(
+  //       'label' => 'Header button link',
+  //       'section' => 'smallwins_cta',
+  //       'type' => 'textarea',
+  //       'description' => "Where should the 'book now' button in the header link to?"
+  //   )
+  // );
   $wp_customize->add_control(
     'smallwins_cta_headline',
     array(
@@ -193,15 +193,15 @@ function smallwins_customiser($wp_customize){
     'panel' => 'smallwins_homepage'
   ));
   $wp_customize->add_section('smallwins_homepage_sell3', array(
-    'title' => __('Sell 3', 'Small Wins'),
+    'title' => __('Accolades Section', 'Small Wins'),
     'priority' => 23,
     'panel' => 'smallwins_homepage'
   ));
-  $wp_customize->add_section('smallwins_homepage_cta', array(
-    'title' => __('Call To Action Section', 'Small Wins'),
-    'priority' => 11,
-    'panel' => 'smallwins_homepage'
-  ));
+  // $wp_customize->add_section('smallwins_homepage_cta', array(
+  //   'title' => __('H', 'Small Wins'),
+  //   'priority' => 11,
+  //   'panel' => 'smallwins_homepage'
+  // ));
   $wp_customize->add_section('smallwins_homepage_tours', array(
     'title' => __('Popular Tours Section', 'Small Wins'),
     'priority' => 30,
@@ -217,15 +217,15 @@ function smallwins_customiser($wp_customize){
   $wp_customize->add_setting('smallwins_homepage_video_url', array(
     'transport' => 'refresh',
   ));
-  $wp_customize->add_setting('smallwins_homepage_tours_description', array(
-    'transport' => 'refresh',
-  ));
+  // $wp_customize->add_setting('smallwins_homepage_tours_description', array(
+  //   'transport' => 'refresh',
+  // ));
   $wp_customize->add_setting('smallwins_homepage_tours_heading', array(
     'transport' => 'refresh',
   ));
-  $wp_customize->add_setting('smallwins_homepage_tours_subheading', array(
-    'transport' => 'refresh',
-  ));
+  // $wp_customize->add_setting('smallwins_homepage_tours_subheading', array(
+  //   'transport' => 'refresh',
+  // ));
   $wp_customize->add_setting('smallwins_homepage_sell1_headline', array(
     'transport' => 'refresh',
   ));
@@ -249,34 +249,35 @@ function smallwins_customiser($wp_customize){
   $wp_customize->add_setting('smallwins_homepage_sell3_headline', array(
     'transport' => 'refresh',
   ));
-  $wp_customize->add_setting('smallwins_homepage_sell3_image', array(
-    'transport' => 'refresh',
-  ));
+  // $wp_customize->add_setting('smallwins_homepage_sell3_image', array(
+  //   'transport' => 'refresh',
+  // ));
   $wp_customize->add_setting('smallwins_homepage_sell3_description', array(
     'transport' => 'refresh',
   ));
 
-  $wp_customize->add_setting('smallwins_homepage_cta_image', array(
-    'transport' => 'refresh',
-  ));
+  // $wp_customize->add_setting('smallwins_homepage_cta_image', array(
+  //   'transport' => 'refresh',
+  // ));
   $wp_customize->add_setting('smallwins_homepage_cta_headline', array(
     'transport' => 'refresh',
   ));
   $wp_customize->add_setting('smallwins_homepage_cta_subheadline', array(
     'transport' => 'refresh',
   ));
-  $wp_customize->add_setting('smallwins_homepage_cta_link1', array(
-    'transport' => 'refresh',
-  ));
-  $wp_customize->add_setting('smallwins_homepage_cta_link2', array(
-    'transport' => 'refresh',
-  ));
-  $wp_customize->add_setting('smallwins_homepage_cta_link1_url', array(
-    'transport' => 'refresh',
-  ));
-  $wp_customize->add_setting('smallwins_homepage_cta_link2_url', array(
-    'transport' => 'refresh',
-  ));
+  // $wp_customize->add_setting('smallwins_homepage_cta_link1', array(
+  //   'transport' => 'refresh',
+  // ));
+  // $wp_customize->add_setting('smallwins_homepage_cta_link2', array(
+  //   'transport' => 'refresh',
+  // ));
+  // $wp_customize->add_setting('smallwins_homepage_cta_link1_url', array(
+  //   'transport' => 'refresh',
+  // ));
+  // $wp_customize->add_setting('smallwins_homepage_cta_link2_url', array(
+  //   'transport' => 'refresh',
+  // ));
+
   $wp_customize->add_setting('smallwins_homepage_sell1_link', array(
     'transport' => 'refresh',
   ));
@@ -289,12 +290,12 @@ function smallwins_customiser($wp_customize){
   $wp_customize->add_setting('smallwins_homepage_sell2_link_url', array(
     'transport' => 'refresh',
   ));
-  $wp_customize->add_setting('smallwins_homepage_sell3_link', array(
-    'transport' => 'refresh',
-  ));
-  $wp_customize->add_setting('smallwins_homepage_sell3_link_url', array(
-    'transport' => 'refresh',
-  ));
+  // $wp_customize->add_setting('smallwins_homepage_sell3_link', array(
+  //   'transport' => 'refresh',
+  // ));
+  // $wp_customize->add_setting('smallwins_homepage_sell3_link_url', array(
+  //   'transport' => 'refresh',
+  // ));
   $wp_customize->add_setting('smallwins_homepage_instagram', array(
     'transport' => 'refresh',
   ));
@@ -329,33 +330,33 @@ function smallwins_customiser($wp_customize){
         'type' => 'text'
     )
   );
-  $wp_customize->add_control(
-    'smallwins_homepage_tours_subheading',
-    array(
-        'label' => 'Subheadline',
-        'section' => 'smallwins_homepage_tours',
-        'type' => 'text'
-    )
-  );
-  $wp_customize->add_control(
-    'smallwins_homepage_tours_description',
-    array(
-        'label' => 'Description',
-        'section' => 'smallwins_homepage_tours',
-        'type' => 'textarea'
-    )
-  );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_tours_subheading',
+  //   array(
+  //       'label' => 'Subheadline',
+  //       'section' => 'smallwins_homepage_tours',
+  //       'type' => 'text'
+  //   )
+  // );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_tours_description',
+  //   array(
+  //       'label' => 'Description',
+  //       'section' => 'smallwins_homepage_tours',
+  //       'type' => 'textarea'
+  //   )
+  // );
 
-  $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'smallwins_homepage_cta_image', array(
-    'label' => __('Image'),
-    'settings' => 'smallwins_homepage_cta_image',
-    'section' => 'smallwins_homepage_cta'
-  )));
+  // $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'smallwins_homepage_cta_image', array(
+  //   'label' => __('Image'),
+  //   'settings' => 'smallwins_homepage_cta_image',
+  //   'section' => 'smallwins_homepage_cta'
+  // )));
   $wp_customize->add_control(
     'smallwins_homepage_cta_headline',
     array(
         'label' => 'Headline text',
-        'section' => 'smallwins_homepage_cta',
+        'section' => 'smallwins_homepage_hero',
         'type' => 'text'
     )
   );
@@ -363,42 +364,42 @@ function smallwins_customiser($wp_customize){
     'smallwins_homepage_cta_subheadline',
     array(
         'label' => 'Subheadline text',
-        'section' => 'smallwins_homepage_cta',
+        'section' => 'smallwins_homepage_hero',
         'type' => 'text'
     )
   );
-  $wp_customize->add_control(
-    'smallwins_homepage_cta_link1_url',
-    array(
-        'label' => 'Button 1 URL',
-        'section' => 'smallwins_homepage_cta',
-        'type' => 'text'
-    )
-  );
-  $wp_customize->add_control(
-    'smallwins_homepage_cta_link1',
-    array(
-        'label' => 'Button 1 text',
-        'section' => 'smallwins_homepage_cta',
-        'type' => 'text'
-    )
-  );
-  $wp_customize->add_control(
-    'smallwins_homepage_cta_link2_url',
-    array(
-        'label' => 'Button 2 URL',
-        'section' => 'smallwins_homepage_cta',
-        'type' => 'text'
-    )
-  );
-  $wp_customize->add_control(
-    'smallwins_homepage_cta_link2',
-    array(
-        'label' => 'Button 2 text',
-        'section' => 'smallwins_homepage_cta',
-        'type' => 'text'
-    )
-  );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_cta_link1_url',
+  //   array(
+  //       'label' => 'Button 1 URL',
+  //       'section' => 'smallwins_homepage_cta',
+  //       'type' => 'text'
+  //   )
+  // );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_cta_link1',
+  //   array(
+  //       'label' => 'Button 1 text',
+  //       'section' => 'smallwins_homepage_cta',
+  //       'type' => 'text'
+  //   )
+  // );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_cta_link2_url',
+  //   array(
+  //       'label' => 'Button 2 URL',
+  //       'section' => 'smallwins_homepage_cta',
+  //       'type' => 'text'
+  //   )
+  // );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_cta_link2',
+  //   array(
+  //       'label' => 'Button 2 text',
+  //       'section' => 'smallwins_homepage_cta',
+  //       'type' => 'text'
+  //   )
+  // );
 
   $wp_customize->add_control(
     'smallwins_homepage_video_url',
@@ -459,11 +460,11 @@ function smallwins_customiser($wp_customize){
         'type' => 'text'
     )
   );
-  $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'smallwins_homepage_sell3_image', array(
-    'label' => __('Image'),
-    'settings' => 'smallwins_homepage_sell3_image',
-    'section' => 'smallwins_homepage_sell3'
-  )));
+  // $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'smallwins_homepage_sell3_image', array(
+  //   'label' => __('Image'),
+  //   'settings' => 'smallwins_homepage_sell3_image',
+  //   'section' => 'smallwins_homepage_sell3'
+  // )));
   $wp_customize->add_control(
     'smallwins_homepage_sell3_description',
     array(
@@ -504,22 +505,22 @@ function smallwins_customiser($wp_customize){
         'type' => 'text'
     )
   );
-  $wp_customize->add_control(
-    'smallwins_homepage_sell3_link',
-    array(
-        'label' => 'Link text',
-        'section' => 'smallwins_homepage_sell3',
-        'type' => 'text'
-    )
-  );
-  $wp_customize->add_control(
-    'smallwins_homepage_sell3_link_url',
-    array(
-        'label' => 'Link URL',
-        'section' => 'smallwins_homepage_sell3',
-        'type' => 'text'
-    )
-  );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_sell3_link',
+  //   array(
+  //       'label' => 'Link text',
+  //       'section' => 'smallwins_homepage_sell3',
+  //       'type' => 'text'
+  //   )
+  // );
+  // $wp_customize->add_control(
+  //   'smallwins_homepage_sell3_link_url',
+  //   array(
+  //       'label' => 'Link URL',
+  //       'section' => 'smallwins_homepage_sell3',
+  //       'type' => 'text'
+  //   )
+  // );
 
 };
 add_action('customize_register', 'smallwins_customiser');

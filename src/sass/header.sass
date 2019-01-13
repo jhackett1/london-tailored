@@ -1,0 +1,73 @@
+.ltx-header
+    margin-bottom: 20px
+
+    &.ltx-header--home
+        position: absolute
+        top: 0px
+        width: 100%
+        z-index: 2
+    
+.ltx-header__masthead
+    border-bottom: 2px solid $yellow
+
+.ltx-header__masthead-inner
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    justify-content: center
+    padding: 10px 20px
+    @media screen and (min-width: 700px)
+        justify-content: space-between
+    @media screen and (min-width: 1600px)
+        padding: 20px 20px
+
+    .custom-logo
+        width: 100%
+        max-width: 300px
+        height: auto
+        @media screen and (min-width: 700px)
+            max-width: 400px
+        @media screen and (min-width: 1600px)
+            max-width: 450px
+
+.ltx-header__social
+    display: none
+    @media screen and (min-width: 700px)
+        display: block
+
+.ltx-header__social-icon
+    margin-left: 15px
+    font-size: 2em
+    &:first-of-type
+        margin-left: 0px
+
+.ltx-header__menu
+    text-align: center
+    padding: 20px
+    .menu-item
+        display: inline-block
+        margin: 5px
+        text-transform: uppercase
+
+    @media screen and (min-width: 700px)
+        text-align: left
+        padding-bottom: 10px
+        .menu-item
+            margin: 0px 15px 0px 0px  
+            position: relative  
+            &:last-of-type
+                margin-right: 0px
+            &.current-menu-item:before
+                content: ""
+                display: block
+                position: absolute
+                background-color: yellow
+                clip-path: polygon(0 0, 50% 100%, 100% 0)
+                width: 20px
+                height: 10px
+                left: 50%
+                transform: translateX(-50%)
+                top: -25px
+
+    @media screen and (min-width: 1600px)
+        padding-bottom: 20px

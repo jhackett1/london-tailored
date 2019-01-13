@@ -12,18 +12,25 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class( 'frontend' ); ?>>
-    <header class="site-header">
-      <div class="container">
-        <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
-        <nav class="main-menu">
-          <?php wp_nav_menu(array( 'theme_location' => 'header' )); ?>
-          <?php if (get_theme_mod( 'smallwins_facebook_page' )) { ?><a class="social-icon" href="<?php echo get_theme_mod( 'smallwins_facebook_page' ); ?>"><i class="fab fa-facebook"></i></a><?php } ?>
-          <?php if (get_theme_mod( 'smallwins_instagram_account' )) { ?><a class="social-icon" href="<?php echo get_theme_mod( 'smallwins_instagram_account' ); ?>"><i class="fab fa-instagram"></i></a><?php } ?>
-          <?php if (get_theme_mod( 'smallwins_twitter_account' )) { ?><a class="social-icon" href="<?php echo get_theme_mod( 'smallwins_twitter_account' ); ?>"><i class="fab fa-twitter"></i></a><?php } ?>
-        
-			<?php if (get_theme_mod( 'ltt-cta' )) { ?><a class="button button--global" href="<?php echo get_theme_mod( 'ltt-cta' ); ?>">Book now</a><?php } ?>
-        
-			
-		  </nav>
+
+    <!-- Site header -->
+    <header class="ltx-header <?php if(is_front_page()){ echo 'ltx-header--home'; }?>">
+
+      <div class="ltx-header__masthead">
+        <div class="container ltx-header__masthead-inner">
+          <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
+
+          <div class="ltx-header__social">
+            <?php if (get_theme_mod( 'smallwins_facebook_page' )) { ?><a target="blank" class="ltx-header__social-icon" href="<?php echo get_theme_mod( 'smallwins_facebook_page' ); ?>"><i class="fab fa-facebook"></i></a><?php } ?>
+            <?php if (get_theme_mod( 'smallwins_instagram_account' )) { ?><a target="blank" class="ltx-header__social-icon" href="<?php echo get_theme_mod( 'smallwins_instagram_account' ); ?>"><i class="fab fa-instagram"></i></a><?php } ?>
+            <?php if (get_theme_mod( 'smallwins_twitter_account' )) { ?><a target="blank" class="ltx-header__social-icon" href="<?php echo get_theme_mod( 'smallwins_twitter_account' ); ?>"><i class="fab fa-twitter"></i></a><?php } ?>
+          </div>
+         
+        </div>
       </div>
+
+      <nav class="ltx-header__menu container">
+        <?php wp_nav_menu(array( 'theme_location' => 'header' )); ?>
+      </nav>
+
     </header>
