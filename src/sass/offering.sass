@@ -33,6 +33,9 @@
 
 .ltx-offering__image
     width: 100%
+    @supports (object-fit: cover)
+        max-height: 310px
+        object-fit: cover
 
 .ltx-offering__headline
     margin-bottom: 10px
