@@ -6,7 +6,7 @@ require_once("customiser.php");
 
 // Enqueue scripts and styles
 function smallwins_enqueuer(){
-  wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
+  wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css?ver=2.0.0');
   wp_enqueue_style('font-awesome', get_template_directory_uri() . '/font-awesome/css/fontawesome-all.min.css');
   wp_enqueue_script('bundle', get_template_directory_uri() . '/js/bundle.js', false, false, true);
 }
