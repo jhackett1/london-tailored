@@ -21,7 +21,7 @@
   <section class="ltx-offering">
     <div class="container ltx-offering__inner">
 
-      <aside class="ltx-offering__card">
+      <aside class="ltx-offering__card" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
         <img class="ltx-offering__image" alt="<?php echo get_theme_mod('smallwins_homepage_sell1_headline')?>"src="<?php echo get_theme_mod('smallwins_homepage_sell1_image')?>"/>
         <div class="ltx-offering__card-inner">
           <h3 class="ltx-offering__headline"><?php echo get_theme_mod('smallwins_homepage_sell1_headline')?></h3>
@@ -32,7 +32,7 @@
         </div>
       </aside>
 
-      <aside class="ltx-offering__card">
+      <aside class="ltx-offering__card" data-aos="fade-up" data-aos-delay="250" data-aos-once="true">
       <img class="ltx-offering__image" alt="<?php echo get_theme_mod('smallwins_homepage_sell2_headline')?>" src="<?php echo get_theme_mod('smallwins_homepage_sell2_image')?>"/>
         <div class="ltx-offering__card-inner">
           <h3 class="ltx-offering__headline"><?php echo get_theme_mod('smallwins_homepage_sell2_headline')?></h3>
@@ -78,7 +78,7 @@
       if ($the_query->have_posts()): ?>
       <ul class="ltx-tours__list">
         <?php while($the_query->have_posts()): $the_query->the_post(); ?>
-        <li class="ltx-tours__item" >
+        <li class="ltx-tours__item" data-aos="fade-up" data-aos-delay="150" data-aos-once="true">
           <a class="ltx-tours__link" href="<?php the_permalink(); ?>">
             <img class="ltx-tours__image" src="<?php echo get_the_post_thumbnail_url($post->ID, 'large'); ?>" alt="<?php the_title(); ?>"/>
             <div class="ltx-tours__item-inner">

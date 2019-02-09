@@ -1,3 +1,10 @@
+import AOS from 'aos'
+
+
+  AOS.init()
+
+
+
 // Scroll back to top on click
 document.querySelector('.back-to-top').addEventListener('click', function(e){
   e.preventDefault();

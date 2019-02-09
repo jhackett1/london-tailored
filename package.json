@@ -19,5 +19,8 @@
     "webpack-cli": "^3.1.2",
     "webpack-stream": "^5.2.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
