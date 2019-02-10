@@ -70,7 +70,16 @@
       <?php
       $the_query = new WP_Query(array(
         'posts_per_page'=>'3',
-        'post_type'=>'tours'
+        'post_type'=>'tours',
+        'meta_query' => array(
+          array(
+              'key'     => 'show_on_homepage_value',
+              'value'   => '1',
+              'compare' => '=',
+          ),
+      ),
+
+  
       ));
       // Output here
       if ($the_query->have_posts()): ?>

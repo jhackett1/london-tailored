@@ -3,6 +3,7 @@
 
 // Get other function files
 require_once("customiser.php");
+require_once("meta-boxes.php");
 
 // Enqueue scripts and styles
 function smallwins_enqueuer(){
