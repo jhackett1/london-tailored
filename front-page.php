@@ -50,11 +50,9 @@
   <section class="ltx-accolades">
     <div class="container ltx-accolades__inner">
 
-      <div class="ltx-accolades__crests">
-        <img class="ltx-accolades__crest" src="<?php echo get_template_directory_uri() ?>/assets/crest1.jpg"/>
-        <img class="ltx-accolades__crest" src="<?php echo get_template_directory_uri() ?>/assets/crest2.jpg"/>
-      </div>
-            
+
+      <img class="ltx-accolades__crests" src="<?php echo get_template_directory_uri() ?>/assets/crests.jpg"/>
+
       <div class="ltx-accolades__text">
         <h3 class="ltx-accolades__headline"><?php echo get_theme_mod('smallwins_homepage_sell3_headline')?></h3>
         <span class="ltx-accolades__stars">★★★★★</span>
@@ -72,7 +70,16 @@
       <?php
       $the_query = new WP_Query(array(
         'posts_per_page'=>'3',
-        'post_type'=>'tours'
+        'post_type'=>'tours',
+        'meta_query' => array(
+          array(
+              'key'     => 'show_on_homepage_value',
+              'value'   => '1',
+              'compare' => '=',
+          ),
+      ),
+
+  
       ));
       // Output here
       if ($the_query->have_posts()): ?>
